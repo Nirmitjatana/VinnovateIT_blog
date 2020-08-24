@@ -1,0 +1,76 @@
+.green{
+    color: lawngreen;
+}
+.red{
+    color: red;
+}
+.blue{
+    color:blue;
+}
+.fa-circle{
+    color:grey;
+}
+.card{
+    margin:0.7rem;
+    transition: box-shadow .3s;
+}
+.card-body{
+    padding:0;
+    display: grid;
+}
+.card1{
+    padding:2rem;
+      background-image: url(../images/dog.jpeg);
+     background-position:center; 
+  background-repeat:no-repeat; 
+    background-size: cover;
+}
+
+.card2{
+      padding:2rem;
+     background-image: url(../images/dog.jpeg);
+     background-position:center; 
+  background-repeat:no-repeat; 
+    background-size: cover;
+}
+.card3{
+      padding:2rem;
+}
+.card_child1 , .card_child2,.card_child3{
+    margin: auto;
+    border:0.2rem solid white;
+    padding: 1rem;
+     -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+   transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.card:hover .card_child1 ,.card:hover .card_child2
+    {
+          transform: scale(1.1);
+}
+.card:hover{
+    box-shadow:0.4rem 0.4rem 0.4rem 0.4rem rgba(33,33,33,.2);
+}
+
+.bottom_elements{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+a{
+    text-decoration: none;
+}
+.semi{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 990px) and (min-width:768px)
+{
+   .semi{
+    display: flex;
+    flex-direction:row;
+       align-items: stretch;
+} 
+}
