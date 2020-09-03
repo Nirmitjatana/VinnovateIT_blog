@@ -82,8 +82,8 @@ nav .nav-links h1 a:hover:after{
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .5s;
+  transition: .5s;
 	border-radius: 40px;
 	box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
  -5px -5px 10px 0 rgba( 230,230,230,0.8);
@@ -97,8 +97,8 @@ nav .nav-links h1 a:hover:after{
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .5s;
+  transition: .5s;
 	/* box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
  -5px -5px 10px 0 rgba( 230,230,230,0.8); */
 }
@@ -130,7 +130,7 @@ input:checked + .slider.round:before {
 }
 
 #team{
-      transition-duration: 5s;
+      transition-duration: 0.5s;
      color: rgb(100,100,100);
 }
 #team .icon{
@@ -142,7 +142,7 @@ input:checked + .slider.round:before {
 }
 #team .card{
     margin:0.7rem;
-    transition: box-shadow .3s;
+    transition: box-shadow .5s;
     background-color: #afd275;
  background: transparent;
   padding:1.5rem 2rem 2rem;
