@@ -82,8 +82,8 @@ nav .nav-links h1 a:hover:after{
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .5s;
+  transition: .5s;
 	border-radius: 40px;
 	box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
  -5px -5px 10px 0 rgba( 230,230,230,0.8);
@@ -97,8 +97,8 @@ nav .nav-links h1 a:hover:after{
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .5s;
+  transition: .5s;
 	/* box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
  -5px -5px 10px 0 rgba( 230,230,230,0.8); */
 }
@@ -127,4 +127,56 @@ input:checked + .slider.round:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#team{
+      transition-duration: 0.5s;
+     color: rgb(100,100,100);
+}
+#team .icon{
+    color: rgb(11,155,202);
+}
+
+ #team .fa-circle{
+    color:rgb(179,179,179);
+}
+#team .card{
+    margin:0.7rem;
+    transition: box-shadow .5s;
+    background-color: #afd275;
+ background: transparent;
+  padding:1.5rem 2rem 2rem;
+    
+     box-shadow: 20px 20px 30px 0 rgba(119,119,119, 0.8),
+    -20px -20px 30px 0 rgba( 230,230,230,0.8);
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+
+}
+#team .card-body{
+    display: grid;
+}
+
+#team .card:hover{  
+  box-shadow: inset 10px 10px 15px 0 rgba(119,119,119, 0.8),
+    inset -10px -10px 15px 0 rgba(230,230,230, 0.8);
+}
+
+#team .bottom_elements{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+#team .semi{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 990px) and (min-width:768px)
+{
+   #team .semi{
+    display: flex;
+    flex-direction:row;
+       align-items: stretch;
+} 
 }
