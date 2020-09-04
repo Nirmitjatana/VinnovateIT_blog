@@ -5,12 +5,26 @@
 }
 
 body{
-    background-color: rgb(197,197,197);
-    color: rgb(100,100,100);
+    background-color: #E0E5EC;
+    color: black;
 }
 
 .blog{
   margin-top: 30px;
+}
+
+.blog-detail-icon{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px 0 #A3B1C6,
+  -2px -2px 5px 0 #FFFFFF;
+  padding: 5px;
+}
+
+.blog-detail-icon:hover{
+  box-shadow: inset 2px 2px 5px 0 #A3B1C6,
+  inset -2px -2px 5px 0 #FFFFFF;
 }
 
 /* .vimg{
@@ -20,6 +34,7 @@ body{
 } */
 
 .writer_info{
+  padding: 7px 0px;
   font-size: 15px;
   line-height: 1;
 }
@@ -31,8 +46,8 @@ body{
   padding: 15px;
   border: none;
   border-radius: .8rem;
-  box-shadow: 2px 2px 5px 0 rgba(119,119,119, 0.8),
-  -2px -2px 5px 0 rgba(230,230,230, 0.8);
+  box-shadow: 2px 2px 5px 0 #A3B1C6,
+  -2px -2px 5px 0 #FFFFFF;
 }
 
 .blog input[type="text"]:focus{
@@ -50,7 +65,7 @@ body{
   margin: auto;
 }
 
-.options{
+/* .options{
   display: flex;
 }
 
@@ -61,17 +76,48 @@ body{
 .options a p{
   margin: 20px 40px 20px 0px;
   padding: 15px;
-  box-shadow: 2px 2px 5px 0 rgba(119,119,119, 0.8),
-  -2px -2px 5px 0 rgba( 230,230,230,0.8);
+  box-shadow: 2px 2px 5px 0 #A3B1C6,
+  -2px -2px 5px 0 #FFFFFF;
   border-radius: 0.8rem;
-  color: rgb(100,100,100);
+  color: black;
   font-size: 20px;
   transition: box-shadow .3s;
 }
 
 .options a p:hover{
-  box-shadow: inset 2px 2px 5px 0 rgba(119,119,119, 0.8),
-  inset -2px -2px 5px 0 rgba( 230,230,230,0.8);
+  box-shadow: inset 2px 2px 5px 0 #A3B1C6,
+  inset -2px -2px 5px 0 #FFFFFF;
+} */
+
+.buttons{
+  display: flex;
+  transition: transform 2s;
+}
+
+.blog-button{
+  margin: 20px 40px 20px 0px;
+  width: 120px;
+  height: 60px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px 0 #A3B1C6,
+  -2px -2px 5px 0 #FFFFFF;
+  border-radius: 0.8rem;
+  color: black;
+  font-size: 20px;
+  transition: box-shadow .3s;
+  text-align: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+}
+
+.blog-button:hover{
+  box-shadow: inset 2px 2px 5px 0 #A3B1C6,
+  inset -2px -2px 5px 0 #FFFFFF;
+}
+
+.hide{
+  display: none;
 }
 
 .blog-comments{
@@ -81,8 +127,8 @@ body{
 .blog-comments .comment{
   margin: 15px 0px;
   padding: 15px;
-  box-shadow: 2px 2px 5px 0 rgba(119,119,119, 0.8),
-  -2px -2px 5px 0 rgba( 230,230,230,0.8);
+  box-shadow: 2px 2px 5px 0 #A3B1C6,
+  -2px -2px 5px 0 #FFFFFF;
   border-radius: 0.8rem;
 }
 
