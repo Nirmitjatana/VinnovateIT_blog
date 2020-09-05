@@ -7,27 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="css/blog_detail.css">
+    <link rel="stylesheet" href="blog_detail/blog_detail.css">
   </head>
   <body>
-  <nav>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-          <div class="nav-links">
-            <h1><a href="index.html">HOME</a></h1>
-            <h1><a href="blog_list.html">BLOG</a></h1>
-          </div>
-        </nav>
+        <!-- <nav>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <div class="nav-links">
+              <h1><a href="index.html">HOME</a></h1>
+              <h1><a href="blog_list.html">BLOG</a></h1>
+            </div>
+        </nav> -->
     <div class="container">
       <div class="blog">
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h3><br>
         <hr>
-          <div class="col- writer_info">
-            <p><i class="fas fa-feather-alt"></i> By VinnovateIT Member</p>
-            <p><i class="far fa-clock"></i> 01 sep 2020, 19:30pm</p>
+        <div class="row">
+          <div class="col-3 col-md-1">
+            <a href="https://vinnovateit.com/"><img src="img/VinnovateIT-shape.png" alt="" class="blog-detail-icon"></a>
           </div>
+          <div class="col-9 col-md-11">
+            <div class="writer_info">
+              <p> By <b>VinnovateIT Member</b></p>
+              <p> 01 sep 2020, 19:30pm</p>
+            </div>
+          </div>
+        </div>
         <hr>
         <br>
         <div class="blog-content">
@@ -48,14 +55,22 @@
 
         <hr>
 
-        <input type="text" name="" placeholder="Your Name">
-        <br>
-        <input type="text" name="" placeholder="Your thoughts">
+        <div class="buttons">
+          <form class="likes" action="index.html" method="post">
+            <input type="submit" value="Like" class="blog-button">
+          </form>
 
-        <div class="options">
-          <a href="#"><p><i class="fas fa-arrow-alt-up"></i> Upvote</p></a>
-          <a href="#"><p><i class="far fa-comment"></i> Comment</p></a>
+          <p class="blog-button" id="comment">Comment</p>
         </div>
+
+      <div class="hide" id="comment-section">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" placeholder="Enter your name" required>
+          <br>
+          <input type="text" name="" placeholder="Enter your thoughts" required>
+          <br>
+          <input type="submit" value="Submit" class="blog-button">
+        </form>
 
         <div class="blog-comments">
           <div class="row">
@@ -87,8 +102,13 @@
         </div>
       </div>
     </div>
+  </div>
 
-
+  <script type="text/javascript">
+    document.getElementById('comment').addEventListener('click',function(){
+      document.getElementById('comment-section').classList.toggle('hide');
+    })
+  </script>
 
   </body>
 </html>
