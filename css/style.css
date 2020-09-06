@@ -1,182 +1,247 @@
-body{
-	height: 100vh;
-	background-color: rgb(197,197,197);
+body {
+    height: 100vh;
+    background-color: rgb(224, 229, 236);
 }
 
-nav{
-	padding: 0;
-	margin: 0;
+nav {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1.5rem;
+
 }
 
-nav .nav-links{
-	position: relative;
-	float: right;
-	right: 0;
+nav .nav-links {
+    position: relative;
+    float: right;
+    right: 0;
 }
 
-nav .nav-links h1{
-	list-style: none;
-	display: inline-block;
-	position: relative;
-	/* box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
- -5px -5px 10px 0 rgba( 230,230,230,0.8); */
- border-radius: .8rem;
-	padding: 15px;
-	margin: 10px;
+nav .nav-links h1 {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    /* box-shadow: 5px 5px 10px 0 rgba(163,177,198, 0.8),
+ -5px -5px 10px 0 rgba( 255,255,255,0.8); */
+    border-radius: .8rem;
+    padding: 15px;
+    margin: 10px;
 }
 
-nav .nav-links h1:hover{
-		/* box-shadow: inset 5px 5px 10px 0 rgba(119,119,119, 0.8),
-    inset -5px -5px 10px 0 rgba(230,230,230, 0.8);
+nav .nav-links h1:hover {
+    /* box-shadow: inset 5px 5px 10px 0 rgba(163,177,198, 0.8),
+    inset -5px -5px 10px 0 rgba(255,255,255, 0.8);
 */
 }
-nav .nav-links h1 a{
-	text-decoration: none;
-	color: rgb(100,100,100);
-	font-size: 32px;
-  font-weight: bold;
-	display: flex;
+
+nav .nav-links h1 a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+      font-size:1.8rem;
+    font-weight: bold;
+    display: flex;
 }
 
-nav .nav-links h1 a:after{
-	content: '';
-	position: absolute;
-	bottom: 5px;
-	left: 5px;
-	width: 45%;
-	height: 6px;
-	transform: scaleX(0.15);
-	background-color: rgb(100,100,100);
-	transform-origin: left;
-	transition: all 0.5s;
+nav .nav-links h1 a:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 45%;
+    height: 6px;
+    transform: scaleX(0.15);
+    background-color: rgb(100, 100, 100);
+    transform-origin: left;
+    transition: all 0.5s;
 }
 
 
-nav .nav-links h1 a:hover:after{
-	transform: scaleX(1);
+nav .nav-links h1 a:hover:after {
+    transform: scaleX(1);
 }
-
+nav .nav-links>.active>a:after {
+   visibility: visible;
+ -webkit-transform: scaleX(1);
+ transform: scaleX(1);
+}
 .switch {
-	position: relative;
-  display: inline-block;
-  width: 70px;
-  height: 40px;
-	margin: 10px;
-	margin-top: 15px;
-	/* box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
- -5px -5px 10px 0 rgba( 230,230,230,0.8); */
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+    margin-top: 15px;
+    /* box-shadow: 5px 5px 10px 0 rgba(163,177,198, 0.8),
+ -5px -5px 10px 0 rgba( 255,255,255,0.8); */
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 
 }
 
-.slider.round{
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .5s;
-  transition: .5s;
-	border-radius: 40px;
-	/* box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
- -5px -5px 10px 0 rgba( 230,230,230,0.8);
- */
+.slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(224, 229, 236);
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px 0 rgba(163, 177, 198, 0.8),
+        -5px -5px 10px 0 rgba(255, 255, 255, 0.8);
+
 }
+
 .slider.round:before {
-  position: absolute;
-  content: "";
-  height: 30px;
-  width: 30px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .5s;
-  transition: .5s;
-	/* box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
- -5px -5px 10px 0 rgba( 230,230,230,0.8); */
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .5s;
+    transition: .5s;
+    /* box-shadow: 5px 5px 10px 0 rgba(163,177,198, 0.8),
+ -5px -5px 10px 0 rgba( 255,255,255,0.8); */
 }
 
 input:checked + .slider.round {
-  background-color: black;
+    background-color: rgb(48, 50, 52);
 }
 
 input:focus + .slider.round {
-	box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
- -5px -5px 10px 0 rgba( 230,230,230,0.8);
+    box-shadow: 5px 5px 10px 0 rgba(163, 177, 198, 0.8),
+        -5px -5px 10px 0 rgba(255, 255, 255, 0.8);
 }
 
 input:checked + .slider.round:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 40px;
-	box-shadow: 5px 5px 10px 0 rgba(119,119,119, 0.8),
- -5px -5px 10px 0 rgba( 230,230,230,0.8);
+    border-radius: 40px;
+        box-shadow: 2px 2px 5px 0 rgba(163, 177, 198, 0.8),
+        -2px -2px 5px 0 rgba(255, 255, 255, 0.8);
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
+    color: rgb(161, 162, 164);
 }
 
-#team{
-      transition-duration: 0.5s;
-     color: rgb(100,100,100);
-}
-#team .icon{
-    color: rgb(11,155,202);
+#team {
+    min-height: 100vh;
+    max-height: 100vh;
+    transition-duration: 0.5s;
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
 }
 
- #team .fa-circle{
-    color:rgb(179,179,179);
+#team .icon {
+    color: rgb(11, 155, 202);
 }
-#team .card{
-    margin:0.7rem;
+
+#team img {
+    border-radius: .8rem;
+    box-shadow: 5px 5px 7px 0 rgba(119, 119, 119, 0.8),
+        -5px -5px 7px 0 rgba(255, 255, 255, 0.8);
+    margin-top: 1rem;
+
+}
+
+#team .fa-circle {
+    color: rgb(179, 179, 179);
+}
+
+#team .card {
+    margin: 0.7rem;
     transition: box-shadow .5s;
     background-color: #afd275;
- background: transparent;
-  padding:1.5rem 2rem 2rem;
-    
-     box-shadow: 10px 10px 15px 0 rgba(119,119,119, 0.8),
-    -10px -10px  15px 0 rgba( 230,230,230,0.8);
-  border: none;
-  border-radius: 50px;
-  overflow: hidden;
+    background: transparent;
+    padding: 1.5rem 2rem 2rem;
+
+    box-shadow: 10px 10px 15px 0 rgba(163, 177, 198, 0.8),
+        -10px -10px 15px 0 rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 1.4rem;
+    overflow: hidden;
 
 }
-#team .card-body{
+
+#team .card-body {
     display: grid;
 }
 
-#team .card:hover{  
-  box-shadow: inset 10px 10px 15px 0 rgba(119,119,119, 0.8),
-    inset -10px -10px 15px 0 rgba(230,230,230, 0.8);
+#team .card:hover {
+    box-shadow: inset 10px 10px 15px 0 rgba(163, 177, 198, 0.8),
+        inset -10px -10px 15px 0 rgba(255, 255, 255, 0.8);
 }
 
-#team .bottom_elements{
-    margin-top:1rem;
-    margin-bottom:1rem;
+#team .bottom_elements {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-#team .semi{
+#team .big_card {
+    font-size: 1.2rem;
+}
+
+#team .semi {
     display: flex;
     flex-direction: column;
 }
-@media only screen and (max-width: 990px) and (min-width:768px)
-{
-   #team .semi{
-    display: flex;
-    flex-direction:row;
-       align-items: stretch;
-} 
+
+@media only screen and (max-width: 990px) and (min-width:768px) {
+    #team .semi {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.dark-mode {
+    background-color: rgb(48, 50, 52);
+    color: rgb(161, 162, 164);
+    /*    background-color: rgb(26,26,26);     */
+
+}
+
+.dark-mode nav .nav-links h1 a {
+    color: rgb(161, 162, 164);
+}
+
+.dark-mode nav .nav-links h1 a:after {
+    background-color: rgb(161, 162, 164);
+}
+
+
+.dark-mode #team {
+    color: rgb(161, 162, 164);
+}
+
+.dark-mode #team img {
+    box-shadow: 5px 5px 7px 0 rgba(73, 73, 73, 0.8),
+        -5px -5px 7px 0 rgba(0, 0, 0, 0.8);
+
+}
+
+.dark-mode #team .card {  
+    box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.8),
+        -6px -6px 8px 0 rgba(73, 73, 73, 0.8);
+
+
+}
+
+.dark-mode #team .card:hover {
+    box-shadow: inset 6px 6px 8px 0 rgba(73, 73, 73, 0.8),
+        inset -6px -6px 8px 0 rgba(0, 0, 0, 0.8);
 }
