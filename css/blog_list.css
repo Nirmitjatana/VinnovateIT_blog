@@ -7,11 +7,14 @@
 body {
     background-color: rgb(224, 229, 236);
     color: rgb(100, 100, 100);
+
 }
 
 nav {
     padding: 0;
     margin: 0;
+    padding-bottom: 1.5rem;
+
 }
 
 nav .nav-links {
@@ -19,7 +22,6 @@ nav .nav-links {
     float: right;
     right: 0;
 }
-
 nav .nav-links h1 {
     list-style: none;
     display: inline-block;
@@ -39,7 +41,7 @@ nav .nav-links h1:hover {
 nav .nav-links h1 a {
     text-decoration: none;
     color: rgb(100, 100, 100);
-    font-size: 32px;
+    font-size:1.8rem;
     font-weight: bold;
     display: flex;
 }
@@ -61,7 +63,11 @@ nav .nav-links h1 a:after {
 nav .nav-links h1 a:hover:after {
     transform: scaleX(1);
 }
-
+nav .nav-links>.active>a:after {
+   visibility: visible;
+ -webkit-transform: scaleX(1);
+ transform: scaleX(1);
+}
 .switch {
     position: relative;
     display: inline-block;
@@ -112,7 +118,7 @@ nav .nav-links h1 a:hover:after {
 }
 
 input:checked + .slider.round {
-    background-color: black;
+    background-color:rgb(48, 50, 52);
 }
 
 input:focus + .slider.round {
@@ -129,8 +135,8 @@ input:checked + .slider.round:before {
 /* Rounded sliders */
 .slider.round {
     border-radius: 40px;
-    box-shadow: 5px 5px 10px 0 rgba(163, 177, 198, 0.8),
-        -5px -5px 10px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 5px 0 rgba(163, 177, 198, 0.8),
+        -2px -2px 5px 0 rgba(255, 255, 255, 0.8);
 }
 
 .slider.round:before {
@@ -151,6 +157,7 @@ input:checked + .slider.round:before {
 .blog_list:hover {
     box-shadow: inset 6px 6px 10px 0 rgba(163, 177, 198, 0.8),
         inset -6px -6px 10px 0 rgba(255, 255, 255, 0.8);
+
 }
 
 .blog_list_img {
@@ -213,12 +220,24 @@ input:checked + .slider.round:before {
 }
 
 .dark-mode .blog_list {
-    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.8),
-        -10px -10px 15px 0 rgba(73, 73, 73, 0.8);
-
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.8),
+        -4px -4px 4px 0 rgba(73, 73, 73, 0.8);
+;
 }
 
 .dark-mode .blog_list:hover {
-    box-shadow: inset 10px 10px 15px 0 rgba(73, 73, 73, 0.8),
-        inset -10px -10px 15px 0 rgba(0, 0, 0, 0.8);
+    box-shadow:inset 4px 4px 6px 0 rgba(73, 73, 73, 0.8),
+        inset -4px -4px 6px 0 rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .read_button {
+      color: rgb(255,255,255);
+
+      box-shadow: 2px 2px 4px 0 rgba(119, 119, 119, 0.8),
+        -2px -2px 4px 0 rgba(73, 73, 73, 0.8);
+}
+
+.dark-mode .read_button:hover {
+    box-shadow: inset 3px 3px 5px 0 rgba(11, 155, 202, 0.8),
+        inset 3px 3px 5px 0 rgba(73, 73, 73, 0.8);
 }
